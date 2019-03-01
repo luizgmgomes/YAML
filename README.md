@@ -19,25 +19,22 @@
     * **KEYS**: "appVersion" and "Kind"
     * **VALUES**: "V1" and "Pod" 
     
+    
 ## There are two main types of structures we need to know:
   * Lists
   * Maps
 
+### Maps
 
-
-
-
-* Maps
-
----
-apiVersion: v1
-kind: Pod
-metadata:
-  name: rss-site
-  labels:
-    app: web
+    ---
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: rss-site
+      labels:
+        app: web
     
-In this case, we have a key, metadata, that has as its value a map with 2 more keys, name and labels. The labels key itself has a map as its value. 
+  * In this example, we have a **KEY**, metadata, that has as its value a **MAP** with 2 more **KEYS**, name and labels. The labels **KEY** itself is another **map** with a single a **KEY** (app) and **VALUE** (web). 
 
 
 
