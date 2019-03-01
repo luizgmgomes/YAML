@@ -1,4 +1,4 @@
-# YAML
+# **YAML**
 
 
 ## Basics
@@ -16,8 +16,8 @@
 
   * Following the example below, we have:
     * The three dashes act as separators and are only necessary if you are creating multiple structures of YAML inside the same file
-    * KEYS: "appVersion" and "Kind"
-    * VALUES: "V1" and "Pod" 
+    * **KEYS**: "appVersion" and "Kind"
+    * **VALUES**: "V1" and "Pod" 
     
 ## There are two main types of structures we need to know:
   * Lists
