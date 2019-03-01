@@ -45,8 +45,17 @@
       - sleep
       - "1000"
       - message
-      - "Bring back Firefly!"```
-      
+      - "Bring back Firefly!"
+    ```
+  * You can basically have any number of items on the *LIST*, as long as they are indented from the parent and have a "hifen" at the beginning. 
+  A comparison with JSON would be
+  ```
+  {
+   "args": ["sleep", "1000", "message", "Bring back Firefly!"]
+  }
+  ```
+  
+  
       
 
 
