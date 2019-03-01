@@ -9,7 +9,7 @@
 
 
 ## KEY & VALUE
-
+```
     ---   
     appVersion: V1    
     Kind: Pod
@@ -18,14 +18,14 @@
     * The three dashes act as separators and are only necessary if you are creating multiple structures of YAML inside the same file
     * **KEYS**: "appVersion" and "Kind"
     * **VALUES**: "V1" and "Pod" 
-    
+```    
     
 ## There are two main types of structures we need to know:
   * Lists
   * Maps
 
 ### Maps
-
+```
     ---
     apiVersion: v1
     kind: Pod
@@ -33,7 +33,7 @@
       name: rss-site
       labels:
         app: web
-    
+```    
   * In this example, we have a **KEY**, metadata, that has as its value a **MAP** with 2 more **KEYS**, name and labels. The labels **KEY** itself is another **map** with a single a **KEY** (app) and **VALUE** (web).
 
 
@@ -47,35 +47,47 @@
       - message
       - "Bring back Firefly!"
     ```
-  * You can basically have any number of items on the *LIST*, as long as they are indented from the parent and have a "hifen" at the beginning. 
-  A comparison with JSON would be
+  * You can basically have any number of items on the **LIST**, as long as they are indented from the parent and have a "hifen" at the beginning. 
+  * Below, a comparison with JSON format:
   ```
   {
    "args": ["sleep", "1000", "message", "Bring back Firefly!"]
   }
   ```
+  * Members of list can also be **MAPS*
+    * In the below example we have the **LIST** of "containers", each of it consist as a "name", "image" and "ports"
+  ```  
+  ---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rss-site
+  labels:
+    app: web
+spec:
+  containers:
+    - name: front-end
+      image: nginx
+      ports:
+        - containerPort: 80
+    - name: rss-reader
+      image: nickchase/rss-php-nginx:v1
+      ports:
+        - containerPort: 88
+  ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-Source: https://www.mirantis.com/blog/introduction-to-yaml-creating-a-kubernetes-deployment/
+**Source: https://www.mirantis.com/blog/introduction-to-yaml-creating-a-kubernetes-deployment/**
