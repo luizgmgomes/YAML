@@ -24,7 +24,7 @@
   * Lists
   * Maps
 
-### Maps
+## Maps
 ```
     ---
     apiVersion: v1
@@ -37,7 +37,7 @@
   * In this example, we have a **KEY**, metadata, that has as its value a **MAP** with 2 more **KEYS**, name and labels. The labels **KEY** itself is another **map** with a single a **KEY** (app) and **VALUE** (web).
 
 
-### Lists
+## Lists
   
   * Also called "hash" or "dictionaries"
 
