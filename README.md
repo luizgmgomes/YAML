@@ -9,14 +9,16 @@
 
 
 ## KEY & VALUE
-Following the example below, we have:
 
----   <- This is a separator and only necessary if you are creating multiple structures of YAML inside the same file
-appVersion: V1    
-Kind: Pod
-<----------------- Where "V1" and "Pod" are Values and "appVersion" and "Kind" are Keys
+    ---   
+    appVersion: V1    
+    Kind: Pod
 
-
+  * Following the example below, we have:
+    * The three dashes act as separators and are only necessary if you are creating multiple structures of YAML inside the same file
+    * KEYS: "appVersion" and "Kind"
+    * VALUES: "V1" and "Pod" 
+    
 ## There are two main types of structures we need to know:
   * Lists
   * Maps
