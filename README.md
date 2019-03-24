@@ -1,4 +1,5 @@
 # **YAML**
+  - Stands for "Yet Another Markup Language"
 
 
 ## Basics
